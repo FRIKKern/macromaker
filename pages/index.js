@@ -5,49 +5,54 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>WoW Macromaker</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Morra di!</a>
-        </h1>
+        <section className="header">
+            <div className="navigation">
+                <div className="logo">
+                     <a href="#"><h1>Macromaker.io</h1> </a>
+                </div>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+                <div className="menu two">
+                    <a href="https://kurs.xn--btfrerprven-x8a3wf.no/playerapp/participate/batfrerprvenno-norges-beste-batfrerkurs-10870/"> Login</a>   
+                </div>
+            </div>
+            <div className="hero">
+                <div margin="" className="first-menu vertical-menu">
+               <h1>1th Menu</h1>
+            </div>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+                <div className="second-menu vertical-menu ">
+                  <div margin="" className="">
+                     <h1>2th Menu</h1>
+                  </div>
+               </div>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+               <div className="third-menu vertical-menu ">
+                  <div margin="" className="">
+                 
+                     <p>Original</p>
+                      <textarea id="originalCode" className="code-editor"  onchange="copyCleanCode()" rows="12" cols="50" placeholder="input original macro here" name="comment" f> Test</textarea>
+                      <input type="submit">
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+                     <p id="">Result</p>
+                     <textarea id="optimizedCode" className="code-editor"  rows="12" cols="50" placeholder="input original macro here" name="comment" > Test</textarea>
+                    
+                     <p id="">Test</p>
+                    <div>  
+               </div>
+               <div className="fourth-menu vertical-menu ">
+                  <div margin="" className="">
+                     <h1>4th Menu</h1>
+                  </div>
+               </div>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+            </div>
+        </section>
+
       </main>
 
       <footer className={styles.footer}>
