@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -26,7 +27,9 @@ export default function Home() {
         </div>
         <div className="hero">
           <div margin="" className="first-menu vertical-menu">
-            <h1>1th Menu</h1>
+            <Link href="/category/[category]" as="/category/druid">
+              <a>Druid</a>
+            </Link>
           </div>
 
           <div className="second-menu vertical-menu ">
@@ -41,7 +44,6 @@ export default function Home() {
               <textarea
                 id="originalCode"
                 className="code-editor"
-                onchange="copyCleanCode()"
                 rows="12"
                 cols="50"
                 placeholder="input original macro here"
